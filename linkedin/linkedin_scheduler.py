@@ -58,7 +58,7 @@ def wait_until(target_time: dt_time):
     time.sleep(wait_seconds)
 
 
-def run_daily_schedule(post_time: str = "11:00", check_time: str = "14:00"):
+def run_daily_schedule(post_time: str = "00:10", check_time: str = "14:00"):
     """
     Run daily schedule.
 

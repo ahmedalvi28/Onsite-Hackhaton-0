@@ -30,8 +30,8 @@ set "SCRIPT_DIR=%~dp0"
 set "PYTHON_SCRIPT=%SCRIPT_DIR%linkedin_scheduler.py"
 set "PYTHON_EXE=python"
 
-REM Create task - runs daily at 11 AM
-schtasks /create /tn "LinkedIn Daily Automation" /tr "\"%PYTHON_EXE%\" \"%PYTHON_SCRIPT%\" --once --task full" /sc daily /st 11:00 /ru "%USERNAME%" /rl highest
+REM Create task - runs daily at 12:10 AM
+schtasks /create /tn "LinkedIn Daily Automation" /tr "\"%PYTHON_EXE%\" \"%PYTHON_SCRIPT%\" --once --task full" /sc daily /st 00:10 /ru "%USERNAME%" /rl highest
 
 if %errorLevel% == 0 (
     echo.
