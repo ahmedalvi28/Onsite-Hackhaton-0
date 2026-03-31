@@ -1,0 +1,19 @@
+# Email Configuration
+
+# SMTP Settings
+smtp_server: smtp.gmail.com
+smtp_port: 587
+use_tls: true
+
+# Authentication
+# IMPORTANT: Use an App Password, not your regular Gmail password
+# Get it from: https://myaccount.google.com/apppasswords
+smtp_username: ahmadtesting28@gmail.com
+smtp_password: xtrb nfas ladi enrd
+
+# From Settings
+from_email: ahmadtesting28@gmail.com
+from_name: Personal AI Employee
+
+# Templates
+templates_path: templates/emails

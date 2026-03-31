@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "Bash(echo:*)",
+      "Bash(xargs -r kill -9)",
+      "Bash(\"/c/Users/alvia/OneDrive/Desktop/AI_Employee_Vault_Hackathon/Drop/factorial_explanation.txt\":*)",
+      "Bash(ls:*)",
+      "Bash(find \"claude-code-skills-lab-main \\(1\\)\" -name \"skills\" -type d)",
+      "Bash(curl:*)",
+      "Bash(powershell -Command \"Expand-Archive -Path ''ngrok.zip'' -DestinationPath ''.\\\\ngrok'' -Force\")",
+      "Bash(.ngrok.exe --version)",
+      "Bash(./ngrok.exe --version)",
+      "Bash(rm:*)",
+      "Bash(start:*)",
+      "Bash(dir \"C:\\\\Users\\\\alvia\\\\OneDrive\\\\Desktop\\\\Onsite-Hackhaton-0\\\\.claude\\\\skills\" /a)",
+      "Bash(cp -r \"C:/Users/alvia/OneDrive/Desktop/Onsite-Hackhaton-0/claude-code-skills-lab-main \\(1\\)/claude-code-skills-lab-main/.claude/skills/archive-done\" \"C:/Users/alvia/OneDrive/Desktop/Onsite-Hackhaton-0/.claude/skills/\")",
+      "Bash(cp -r \"C:/Users/alvia/OneDrive/Desktop/Onsite-Hackhaton-0/claude-code-skills-lab-main \\(1\\)/claude-code-skills-lab-main/.claude/skills/execute-task\" \"C:/Users/alvia/OneDrive/Desktop/Onsite-Hackhaton-0/.claude/skills/\")",
+      "Bash(cp -r \"C:/Users/alvia/OneDrive/Desktop/Onsite-Hackhaton-0/claude-code-skills-lab-main \\(1\\)/claude-code-skills-lab-main/.claude/skills/reject-task\" \"C:/Users/alvia/OneDrive/Desktop/Onsite-Hackhaton-0/.claude/skills/\")",
+      "Bash(\"C:/Users/alvia/OneDrive/Desktop/AI_Employee_Vault_Hackathon/Drop/test_task.md\")",
+      "Bash(cmd /c setup_linkedin_daily.bat)",
+      "Bash(schtasks:*)",
+      "Bash(mv linkedin_*.py linkedin_watcher.py linkedin/)",
+      "Bash(mv *.py main/)",
+      "Bash(mv *.yaml config/)",
+      "Bash(mv *.bat main/)",
+      "Bash(cd linkedin:*)",
+      "Bash(cd:*)",
+      "Bash(grep -E \"\\\\.py$|\\\\.yaml$\")",
+      "Bash(timeout 5 tail -f \"C:\\\\Users\\\\alvia\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-alvia-OneDrive-Desktop-Onsite-Hackhaton-0\\\\060a3161-4b40-4a30-bd9a-9ad6631ed950\\\\tasks\\\\bkd7skz9v.output\")"
+    ]
+  }
+}

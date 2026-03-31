@@ -1,0 +1,23 @@
+# Gmail Watcher Configuration
+
+# How often to check for new emails (in seconds)
+check_interval: 120
+
+# Gmail search query
+# See https://support.google.com/mail/answer/7190 for query syntax
+query: 'is:unread'
+
+# Maximum number of messages to fetch per check
+max_results: 10
+
+# Label to filter (leave empty to search all labels)
+label: 'INBOX'
+
+# Default priority for uncategorized emails
+priority_threshold: 'medium'
+
+# Automatically mark emails as read after processing
+auto_mark_read: false
+
+# Whether to include full email body in task files
+include_full_body: false
