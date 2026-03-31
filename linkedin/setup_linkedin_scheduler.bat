@@ -1,22 +1,25 @@
 @echo off
 REM LinkedIn Automation Scheduler Setup
 REM This sets up a Windows Task Scheduler task to run LinkedIn automation
+REM Automatically requests administrator privileges
 
+:: Request admin privileges
+net session >nul 2>&1
+if %errorLevel% == 0 (
+    goto :admin
+) else (
+    echo Requesting administrator privileges...
+    powershell -Command "Start-Process '%~f0' -Verb RunAs"
+    exit /b
+)
+
+:admin
 echo ========================================
 echo LinkedIn Automation Scheduler Setup
 echo ========================================
 echo.
 
-REM Check if running as administrator
-net session >nul 2>&1
-if %errorLevel% == 0 (
-    echo ✓ Running as administrator
-) else (
-    echo ! Please run this script as administrator
-    echo ! Right-click and select "Run as administrator"
-    pause
-    exit /b 1
-)
+echo ✓ Running as administrator
 
 echo.
 echo Creating scheduled task...
