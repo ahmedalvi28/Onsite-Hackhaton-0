@@ -28,7 +28,11 @@
       "Bash(cd linkedin:*)",
       "Bash(cd:*)",
       "Bash(grep -E \"\\\\.py$|\\\\.yaml$\")",
-      "Bash(timeout 5 tail -f \"C:\\\\Users\\\\alvia\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-alvia-OneDrive-Desktop-Onsite-Hackhaton-0\\\\060a3161-4b40-4a30-bd9a-9ad6631ed950\\\\tasks\\\\bkd7skz9v.output\")"
+      "Bash(timeout 5 tail -f \"C:\\\\Users\\\\alvia\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-alvia-OneDrive-Desktop-Onsite-Hackhaton-0\\\\060a3161-4b40-4a30-bd9a-9ad6631ed950\\\\tasks\\\\bkd7skz9v.output\")",
+      "Bash(git push:*)",
+      "Bash(git rm:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
