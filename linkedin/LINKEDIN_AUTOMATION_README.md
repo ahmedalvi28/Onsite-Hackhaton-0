@@ -72,7 +72,7 @@ python linkedin/linkedin_scheduler.py
 python linkedin/linkedin_scheduler.py --once --task full
 
 # Custom schedule
-python linkedin/linkedin_scheduler.py --post-time 10:00 --check-time 15:00
+python linkedin/linkedin_scheduler.py --post-time 11:00 --check-time 15:00
 ```
 
 ### Windows Task Scheduler
@@ -164,7 +164,7 @@ topics = {
 ### Change Schedule
 Edit `linkedin_scheduler.py`:
 ```python
-post_time: str = "09:00"  # Change post time
+post_time: str = "11:00"  # Change post time
 check_time: str = "14:00"  # Change check time
 ```
 
