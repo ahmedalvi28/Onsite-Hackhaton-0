@@ -2,16 +2,35 @@
 
 ## Overview
 
-Two posting methods available:
+Complete LinkedIn automation system available:
 
-| Method | File | Description |
-|--------|------|-------------|
-| Selenium | `auto_post.py` | Browser automation - working but slower |
-| API | `api_post.py` | LinkedIn API - faster, requires proper setup |
+| Feature | File | Description |
+|---------|------|-------------|
+| Full Automation | `linkedin_automation.py` | Post, monitor, accept connections |
+| Scheduler | `linkedin_scheduler.py` | Continuous scheduling |
+| Selenium Post | `auto_post.py` | Browser automation - legacy |
+| API Post | `api_post.py` | LinkedIn API - requires setup |
 
 ## Quick Start
 
-### Method 1: Selenium Auto-Post (Working)
+### Complete Automation (Recommended)
+
+```bash
+# Run all tasks
+python linkedin/linkedin_automation.py --full
+
+# Or use scheduler
+python linkedin/linkedin_scheduler.py
+```
+
+**Features:**
+- Auto-post daily content (rotates by topic)
+- Monitor notifications/messages
+- Auto-accept connections
+- Create Obsidian tasks
+- Comprehensive logging
+
+### Legacy Method 1: Selenium Auto-Post
 
 ```bash
 python linkedin/auto_post.py

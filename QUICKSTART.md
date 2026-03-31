@@ -50,11 +50,23 @@ python main/watcher.py
 ### LinkedIn
 
 ```bash
-# Post using Selenium (working)
-python linkedin/auto_post.py
+# Complete automation (post, monitor, accept connections)
+python linkedin/linkedin_automation.py --full
 
-# Post using API (requires setup)
-python linkedin/api_post.py
+# Post only
+python linkedin/linkedin_automation.py --post
+
+# Monitor notifications
+python linkedin/linkedin_automation.py --monitor
+
+# Accept connections
+python linkedin/linkedin_automation.py --accept
+
+# Run scheduler continuously
+python linkedin/linkedin_scheduler.py
+
+# Setup Windows Task Scheduler (run as admin)
+linkedin/setup_linkedin_scheduler.bat
 ```
 
 ### OAuth Setup

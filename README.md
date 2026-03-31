@@ -76,14 +76,34 @@ Onsite-Hackhaton-0/
 └── logs/                     # Log files
 ```
 
-### 2. Working LinkedIn Auto-Post
+### 2. Complete LinkedIn Automation
 
 ```bash
-# Post to LinkedIn automatically
-python linkedin/auto_post.py
+# Post daily content
+python linkedin/linkedin_automation.py --post
+
+# Monitor notifications
+python linkedin/linkedin_automation.py --monitor
+
+# Accept connection requests
+python linkedin/linkedin_automation.py --accept
+
+# Run everything
+python linkedin/linkedin_automation.py --full
+
+# Run with scheduler (continuous)
+python linkedin/linkedin_scheduler.py
+
+# Setup Windows Task Scheduler (run as admin)
+linkedin/setup_linkedin_scheduler.bat
 ```
 
-✅ **Status:** Working! Uses "Next" button, not "Post"
+✅ **Features:**
+- Auto-post daily content (rotates by topic)
+- Monitor notifications/messages
+- Auto-accept connections
+- Create Obsidian tasks
+- Full documentation: `linkedin/LINKEDIN_AUTOMATION_README.md`
 
 ### 3. Gold Tier Progress
 
